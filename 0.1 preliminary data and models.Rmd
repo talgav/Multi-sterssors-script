@@ -1,0 +1,43 @@
+---
+title: "0.1 preliminary data and models"
+author: "TG"
+date: "2024-05-26"
+output: html_document
+---
+
+```{r}
+library(iNEXT.3D)
+library(DarkDiv)
+library(tidyverse)
+library(vegan)
+library(plotrix)
+library(sjPlot)
+library(sjmisc)
+library(gridExtra)
+library(lme4)
+library(lmerTest)
+library(MuMIn)
+library(glmmTMB)
+library(DHARMa)
+library(ggeffects)
+library(metafor)
+library(SingleCaseES)
+library(vegan)
+library(rareNMtests)
+library(zetadiv)
+library(plotly)
+library(FD)
+library(mFD)
+library(funrar)
+library(leaflet)
+library(htmlwidgets)
+```
+
+
+```{r include=FALSE}
+
+load("Data\\Clean_Medata_lis.Rdata")
+load("Data\\pairs.Rdata")
+traits <-read_csv("Data\\trait_data_cleaned.csv")
+
+```
